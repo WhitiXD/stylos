@@ -47,6 +47,35 @@
 </nav>
 
         <script src="C:\Users\whiti\OneDrive\Escritorio\stylos-\Java"></script>
+        <script>
+        // Función para cargar el contenido según la ruta
+        function loadContent() {
+            const hash = window.location.hash.substr(1); // Obtener la parte de la URL después del #
+            const contentDiv = document.getElementById('content');
+
+            // Mapeo de rutas a contenido
+            const routes = {
+                '': '<h2>Welcome to the home page</h2>',
+                'home': '<h2>This is the home page</h2>',
+                'about': '<h2>This is the about page</h2>',
+                'contact': '<h2>This is the contact page</h2>',
+                // Agrega más rutas y contenido según sea necesario
+            };
+
+            // Cargar contenido según la ruta
+            if (routes[hash]) {
+                contentDiv.innerHTML = routes[hash];
+            } else {
+                contentDiv.innerHTML = '<h2>Page not found</h2>';
+            }
+        }
+
+        // Evento para cargar contenido al cambiar la URL
+        window.addEventListener('hashchange', loadContent);
+
+        // Cargar contenido inicial al cargar la página
+        window.addEventListener('load', loadContent);
+    </script>
       </nav>
       <h5> 
 <img src="STYLOS V2.5.png" usemap="#image-map">
