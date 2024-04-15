@@ -12,25 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap" rel="stylesheet">
   </head>
-  <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // Inicializar el widget de identidad
-        netlifyIdentity.init();
-
-        // Manejar eventos del widget de identidad
-        netlifyIdentity.on('login', function(user) {
-          console.log('Usuario ha iniciado sesión:', user);
-          // Aquí puedes realizar acciones adicionales después de iniciar sesión, como redireccionar a una página específica.
-        });
-
-        netlifyIdentity.on('logout', function() {
-          console.log('Usuario ha cerrado sesión');
-          // Aquí puedes realizar acciones adicionales después de cerrar sesión.
-        });
-
-        // Puedes manejar otros eventos según sea necesario.
-      });
-    </script>
   <body>
     <header>
       <nav> 
