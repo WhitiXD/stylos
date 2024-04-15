@@ -78,6 +78,21 @@
     <footer>
       <p>Derechos reservados &copy; 2023 Stylos</p>
     </footer>
+    <script>
+      .then(response => {
+    if (!response.ok) {
+        throw new Error('Hubo un problema al enviar el formulario');
+    }
+    return response.json();
+})
+.then(data => {
+    // Aquí puedes redirigir a una página de confirmación
+    window.location.href = "exito-compra.html";
+})
+.catch(error => {
+    console.error('Error:', error);
+    alert('Hubo un problema al enviar el formulario');
+});
     </script>
   </body>
 </html>
