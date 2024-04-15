@@ -52,7 +52,7 @@
         <h3 id="cami3">Envío no disponible por el momento</h3>
       </div>
       <div id="formulario-container">
-        <form id="contact-form" method="POST">
+        <form name="contact" netlify method="POST">
           <label for="nombre">Nombre completo:</label>
           <input type="text" id="nombre" name="nombre" required><br><br>
           <label for="direccion">Dirección de envío:</label>
@@ -71,67 +71,13 @@
           <select id="producto" name="producto">
             <option value="STYLOSPRIME">STYLOS PRIME</option>
           </select><br><br>
-          <input type="submit" value="Enviar">
+          <button type="submit">Enviar</button>
         </form>
       </div>
     </main>
     <footer>
       <p>Derechos reservados &copy; 2023 Stylos</p>
     </footer>
-
-    <script>
-      document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-        const formData = new FormData(this);
-        fetch('https://api.sendgrid.com/v3/mail/send', {
-          method: 'POST',
-          headers: {
-            'Authorization': 'Bearer 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', // Reemplaza 'TU_API_KEY' con tu clave de API de SendGrid
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            personalizations: [
-              {
-                to: [
-                  {
-                    email: 'stylosbrand@gmail.com', // Cambia esto por tu dirección de correo electrónico
-                  },
-                ],
-                subject: 'Nuevo mensaje de contacto desde el sitio web',
-              },
-            ],
-            from: {
-              email: formData.get('email'),
-            },
-            content: [
-              {
-                type: 'text/plain',
-                value: `
-                  Nombre: ${formData.get('nombre')}
-                  Dirección: ${formData.get('direccion')}
-                  Correo electrónico: ${formData.get('email')}
-                  Talla: ${formData.get('talla')}
-                  Producto: ${formData.get('producto')}
-                `,
-              },
-            ],
-          }),
-        })
-        .then(response => {
-          if (!response.ok) {
-            throw new Error('Hubo un problema al enviar el formulario');
-          }
-          return response.json();
-        })
-        .then(data => {
-          alert('El formulario se envió correctamente');
-          // Aquí puedes redirigir a una página de confirmación o realizar otras acciones después de enviar el formulario
-        })
-        .catch(error => {
-          console.error('Error:', error);
-          alert('Hubo un problema al enviar el formulario');
-        });
-      });
     </script>
   </body>
 </html>
