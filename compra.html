@@ -12,6 +12,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap" rel="stylesheet">
   </head>
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Inicializar el widget de identidad
+        netlifyIdentity.init();
+
+        // Manejar eventos del widget de identidad
+        netlifyIdentity.on('login', function(user) {
+          console.log('Usuario ha iniciado sesión:', user);
+          // Aquí puedes realizar acciones adicionales después de iniciar sesión, como redireccionar a una página específica.
+        });
+
+        netlifyIdentity.on('logout', function() {
+          console.log('Usuario ha cerrado sesión');
+          // Aquí puedes realizar acciones adicionales después de cerrar sesión.
+        });
+
+        // Puedes manejar otros eventos según sea necesario.
+      });
+    </script>
   <body>
     <header>
       <nav> 
@@ -99,47 +118,6 @@
         });
       });
     </script>
-    <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
-  import "https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js"; // Import Firestore module
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyCiZiB40lQJXru89ZBRzulX5kjJdaXyORI",
-    authDomain: "basededatos-85bb9.firebaseapp.com",
-    projectId: "basededatos-85bb9",
-    storageBucket: "basededatos-85bb9.appspot.com",
-    messagingSenderId: "660357593690",
-    appId: "1:660357593690:web:9c8d203a3aafb6e74d3663",
-    measurementId: "G-TFR6X1MVW7"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
     <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // Inicializar el widget de identidad
-        netlifyIdentity.init();
-
-        // Manejar eventos del widget de identidad
-        netlifyIdentity.on('login', function(user) {
-          console.log('Usuario ha iniciado sesión:', user);
-          // Aquí puedes realizar acciones adicionales después de iniciar sesión, como redireccionar a una página específica.
-        });
-
-        netlifyIdentity.on('logout', function() {
-          console.log('Usuario ha cerrado sesión');
-          // Aquí puedes realizar acciones adicionales después de cerrar sesión.
-        });
-
-        // Puedes manejar otros eventos según sea necesario.
-      });
-    </script>
   </body>
 </html>
