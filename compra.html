@@ -103,8 +103,7 @@
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+  import "https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js"; // Import Firestore module
 
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -121,9 +120,25 @@
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
-    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js"></script>
 </script>
-    
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js">
+      document.addEventListener('DOMContentLoaded', function() {
+  // Inicializar el widget de identidad
+  netlifyIdentity.init();
+
+  // Manejar eventos del widget de identidad
+  netlifyIdentity.on('login', function(user) {
+    console.log('Usuario ha iniciado sesión:', user);
+    // Aquí puedes realizar acciones adicionales después de iniciar sesión, como redireccionar a una página específica.
+  });
+
+  netlifyIdentity.on('logout', function() {
+    console.log('Usuario ha cerrado sesión');
+    // Aquí puedes realizar acciones adicionales después de cerrar sesión.
+  });
+
+  // Puedes manejar otros eventos según sea necesario.
+});
+    </script>
   </body>
 </html>
