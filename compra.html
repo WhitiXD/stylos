@@ -122,6 +122,33 @@
       window.location.href = "exito-compra.html";
     });
   </script>
+    <script>
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const formData = new FormData(this);
+    fetch('https://api.mailgun.net/v3/sandbox349448878b8c4992832cbacb89474f7d.mailgun.org/messages', {
+      method: 'POST',
+      headers: {
+        'Authorization': 'Basic ' + btoa('api:b2f41ce4e8c059a3a0df75cb23a389ba-19806d14-e722fc8d'),
+      },
+      body: formData
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Hubo un problema al enviar el formulario');
+      }
+      return response.json();
+    })
+    .then(data => {
+      alert('El formulario se envió correctamente');
+      // Aquí puedes redirigir a una página de confirmación o realizar otras acciones después de enviar el formulario
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      alert('Hubo un problema al enviar el formulario');
+    });
+  });
+</script>
 
 
   <footer>
