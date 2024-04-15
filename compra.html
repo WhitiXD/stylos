@@ -78,25 +78,45 @@
     <footer>
       <p>Derechos reservados &copy; 2023 Stylos</p>
     </footer>
+    <script src="https://www.gstatic.com/firebasejs/9.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.1/firebase-firestore.js"></script>
     <script>
+      // Configurar Firebase
+      const firebaseConfig = {
+        apiKey: "TU_API_KEY",
+        authDomain: "TU_DOMINIO.firebaseapp.com",
+        projectId: "TU_PROYECTO_ID",
+        storageBucket: "TU_BUCKET.appspot.com",
+        messagingSenderId: "TU_SENDER_ID",
+        appId: "TU_APP_ID"
+      };
+
+      // Inicializar Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+
+      // Manejar el envío del formulario
       document.forms["contact"].addEventListener("submit", function(event) {
         event.preventDefault();
         const formData = new FormData(this);
-        fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: new URLSearchParams(formData).toString()
-        })
-        .then(response => {
-          if (!response.ok) {
-            throw new Error("Hubo un problema al enviar el formulario.");
-          }
-          window.location.href = "exito-compra.html";
-        })
-        .catch(error => {
-          console.error("Error:", error);
-          alert("Hubo un problema al enviar el formulario.");
-        });
+        const cliente = {
+          nombre: formData.get("nombre"),
+          direccion: formData.get("direccion"),
+          email: formData.get("email"),
+          talla: formData.get("talla"),
+          producto: formData.get("producto")
+        };
+
+        // Guardar los datos del cliente en Firebase Firestore
+        db.collection("Pedidos").add(cliente)
+          .then((docRef) => {
+            console.log("Datos del cliente guardados con ID: ", docRef.id);
+            window.location.href = "exito-compra.html";
+          })
+          .catch((error) => {
+            console.error("Error al guardar los datos del cliente: ", error);
+            alert("Hubo un problema al enviar el formulario.");
+          });
       });
     </script>
   </body>
