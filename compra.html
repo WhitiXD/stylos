@@ -121,24 +121,25 @@
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
 </script>
-    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js">
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
       document.addEventListener('DOMContentLoaded', function() {
-  // Inicializar el widget de identidad
-  netlifyIdentity.init();
+        // Inicializar el widget de identidad
+        netlifyIdentity.init();
 
-  // Manejar eventos del widget de identidad
-  netlifyIdentity.on('login', function(user) {
-    console.log('Usuario ha iniciado sesión:', user);
-    // Aquí puedes realizar acciones adicionales después de iniciar sesión, como redireccionar a una página específica.
-  });
+        // Manejar eventos del widget de identidad
+        netlifyIdentity.on('login', function(user) {
+          console.log('Usuario ha iniciado sesión:', user);
+          // Aquí puedes realizar acciones adicionales después de iniciar sesión, como redireccionar a una página específica.
+        });
 
-  netlifyIdentity.on('logout', function() {
-    console.log('Usuario ha cerrado sesión');
-    // Aquí puedes realizar acciones adicionales después de cerrar sesión.
-  });
+        netlifyIdentity.on('logout', function() {
+          console.log('Usuario ha cerrado sesión');
+          // Aquí puedes realizar acciones adicionales después de cerrar sesión.
+        });
 
-  // Puedes manejar otros eventos según sea necesario.
-});
+        // Puedes manejar otros eventos según sea necesario.
+      });
     </script>
   </body>
 </html>
