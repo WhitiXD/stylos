@@ -85,12 +85,39 @@
       document.getElementById('contact-form').addEventListener('submit', function(event) {
         event.preventDefault();
         const formData = new FormData(this);
-        fetch('https://api.mailgun.net/v3/sandbox349448878b8c4992832cbacb89474f7d.mailgun.org/messages', {
+        fetch('https://api.sendgrid.com/v3/mail/send', {
           method: 'POST',
           headers: {
-            'Authorization': 'Basic ' + btoa('api:b2f41ce4e8c059a3a0df75cb23a389ba-19806d14-e722fc8d'),
+            'Authorization': 'Bearer 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',
+            'Content-Type': 'application/json',
           },
-          body: formData
+          body: JSON.stringify({
+            personalizations: [
+              {
+                to: [
+                  {
+                    email: 'stylosbrand@gmail.com', // Cambia esto por tu dirección de correo electrónico
+                  },
+                ],
+                subject: 'Nuevo mensaje de contacto desde el sitio web',
+              },
+            ],
+            from: {
+              email: formData.get('email'),
+            },
+            content: [
+              {
+                type: 'text/plain',
+                value: `
+                  Nombre: ${formData.get('nombre')}
+                  Dirección: ${formData.get('direccion')}
+                  Correo electrónico: ${formData.get('email')}
+                  Talla: ${formData.get('talla')}
+                  Producto: ${formData.get('producto')}
+                `,
+              },
+            ],
+          }),
         })
         .then(response => {
           if (!response.ok) {
@@ -110,4 +137,3 @@
     </script>
   </body>
 </html>
-
