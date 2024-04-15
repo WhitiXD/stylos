@@ -1,0 +1,457 @@
+body {
+  font-family: TT Slabs Trial Black Italic , sans-serif;
+  margin: 0;
+}
+
+
+
+
+header {
+  background: linear-gradient(to bottom right, #A51C30, #ff0077);
+  background-size: cover;
+  background-color:#a60230 ;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  max-width: 100%;
+  max-height: 0%;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sport.es%2Fes%2Fnoticias%2Fchampions%2Fexcusa-inverosimil-sergio-ramos-84425544&psig=AOvVaw1owmv07v6mHVpPk4ygg8a_&ust=1679359041086000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCJjttoqi6f0CFQAAAAAdAAAAABAE");
+  background-size: cover;
+  z-index: -1;
+}
+
+
+nav a {
+  color: #fff;
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 0;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 48px;
+}
+
+main {
+  background: linear-gradient(to bottom right, #FFC0CB, #87CEEB);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px;
+}
+
+strong {
+  margin-bottom: 400px;
+  font-size:48px;
+  font-family: 'Lexend Deca', sans-serif;
+
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+
+
+h3 {
+  font-size: 32px;
+  margin: 0;
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+p {
+  font-size: 20px;
+  font-family: 'Cantarell', sans-serif;
+  
+}
+
+#creditos {
+  
+  margin-top: 1000px;
+}
+
+
+h2 {
+   max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h4 {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 40px;
+  margin: 0;
+  margin-top: 20px;
+  font-smooth: auto;
+  font-optical-sizing:auto ;
+}
+
+h3 {
+  font-weight: bolder;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 54px;
+  margin-bottom: 25px;
+  margin-left: 20px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+h6 {
+  font-family: 'Rye', cursive;
+  font-size:18px;
+  margin: 0; 
+  }
+
+
+
+ul {
+  font-family: 'Darker Grotesque', cursive;
+  font-size:32px;
+
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+h5 img {
+  height: 400px;
+  max-width: 100%;
+  max-height: 500px;
+  vertical-align: middle;
+  transition: transform 0.3s ease-in-out;
+}
+
+h5:hover img {
+  transform: scale(1.1);
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+footer {
+  margin-left: 30px;
+}
+
+#imagen1:hover {
+  filter: brightness(120%);
+}
+
+
+
+.link {
+  position: relative;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.link:hover::after {
+  transform: scaleX(1);
+}
+
+
+
+
+
+.product {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  display: inline-block;
+  margin: 20px;
+  width: 385px;
+  height: 385px;
+  border: 1px solid #000;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+.product img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+body {
+  background: #f9d9eb; /* Fallback for older browsers */
+  background: -webkit-linear-gradient(to bottom right, #f9d9eb, #e77eb9); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom right, #f9d9eb, #e77eb9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.tarjeta-credito {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.tarjeta-credito label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.tarjeta-credito input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.tarjeta-credito .fecha-expiracion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tarjeta-credito .fecha-expiracion select {
+  width: 48%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.tarjeta-credito #cvv {
+  width: 30%;
+}
+
+
+
+.left-column {
+  width: 100%;
+  float: left;
+}
+.right-column {
+  width: 50%;
+  float: right;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.image-container {
+  flex: 1;
+}
+
+
+.form-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.form-container h2 {
+  margin-top: 0;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.form-container input,
+.form-container select {
+  display: block;
+  width: 95%;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid;
+  margin-bottom: 15px;
+}
+
+.form-container button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: darkred;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #3e8e41;
+}
+
+#opcionespro {
+  height: 45px; /* ajusta la altura del menú desplegable */
+  width: 550px; /* ajusta el ancho del menú desplegable */
+  font-size: 15px; /* ajusta el tamaño de fuente del menú desplegable */
+}
+
+#opcionespro option {
+  font-size: 16px; /* ajusta el tamaño de fuente de las opciones */
+  padding: 10px; /* ajusta el espacio interior de las opciones */
+}
+
+#opcionesco {
+  height: 45px; /* ajusta la altura del menú desplegable */
+  width: 550px; /* ajusta el ancho del menú desplegable */
+  font-size: 15px; /* ajusta el tamaño de fuente del menú desplegable */
+}
+
+#opcionesco option {
+  font-size: 16px; /* ajusta el tamaño de fuente de las opciones */
+  padding: 10px; /* ajusta el espacio interior de las opciones */
+}
+
+
+
+#cami {
+margin-bottom: 60px;
+ margin-left: 535px;
+ text-align: center;
+ max-width: 800px;
+margin: 0 auto;
+text-align: center;
+
+
+}
+
+
+image  {
+  size: 10px;
+  max-width: 60%;
+  max-height: 40%;
+
+
+}
+
+
+@media only screen and (max-width: 767px) {
+  #camiseta,
+  #camiseta2,
+  #camiseta3 {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+form {
+
+  padding: 200px;
+  margin-bottom: 65px;
+
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input,
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#espe {
+  display: none;
+}
+
+
+button:hover {
+  background-color: #0062cc;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #007bff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.box {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+
+

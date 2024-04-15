@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Pagar con PayPal - Stylos </title>
+  <link rel="icon" href="https://stylosbrand.000webhostapp.com/STYLOS_V2.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+      margin: 2rem 0;
+      font-family: 'Comfortaa', cursive;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    input[type="image"] {
+      display: block;
+      margin: 2rem auto;
+    }
+
+    input[type="image"]:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+
+  body {
+  background: #6bc296; 
+  margin-top: 200px;
+}
+
+
+
+
+  </style>
+</head>
+<body>
+  <h1>Bien, el pedido se ha realizado correctamente, ahora debes pagar el importe</h1>
+  <div id="smart-button-container">
+      <div style="text-align: center;">
+        <div id="paypal-button-container"></div>
+      </div>
+    </div>
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
+  <script>
+    function initPayPalButton() {
+      paypal.Buttons({
+        style: {
+          shape: 'rect',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'paypal',
+          
+        },
+
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{"amount":{"currency_code":"EUR","value":23}}]
+          });
+        },
+
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(orderData) {
+            
+            // Full available details
+            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+            // Show a success message within this page, e.g.
+            const element = document.getElementById('paypal-button-container');
+            element.innerHTML = '';
+            element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+            // Or go to another URL:  actions.redirect('thank_you.html');
+            
+          });
+        },
+
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container');
+    }
+    initPayPalButton();
+  </script>
+
+  <?php
+    if($_SERVER['REQUEST_METHOD'] == 'POST') {
+      $to = "stylosbrand@gmail.com";
+      $subject = "Nuevo pago de PayPal de $nombre";
+      $message = "Se ha recibido un nuevo pago de PayPal.";
+      $headers = "From: tu_correo_de_origen@ejemplo.com";
+      mail($to, $subject, $message, $headers);
+    }
+  ?>
+
+</body>
+</html>
