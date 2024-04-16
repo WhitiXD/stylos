@@ -191,16 +191,16 @@ footer {
 }
 
 #talla {
-  width: calc(100% - 24px); /* Restamos 24px para dejar espacio para la flecha del desplegable */
-  padding: 10px; /* Espaciado interno */
+  width: calc(80% - 24px); /* Reducimos el ancho al 80% */
+  padding: 5px; /* Reducimos el espaciado interno */
+  margin: 0 auto; /* Centramos horizontalmente */
   margin-bottom: 20px; /* Espacio entre elementos */
-  margin-left:5%;
-  border: 2px solid #007bff; /* Borde */
-  border-radius: 10px; /* Borde redondeado */
+  border: 1px solid #007bff; /* Borde */
+  border-radius: 5px; /* Borde redondeado */
   background-color: rgba(255, 255, 255, 0.2); /* Fondo casi transparente */
-  color: #fff; /* Color del texto */
-  font-size: 16px; /* Tamaño de fuente */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+  color: #000; /* Color del texto */
+  font-size: 14px; /* Tamaño de fuente reducido */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Sombra */
   -webkit-appearance: none; /* Eliminar el estilo nativo del desplegable en algunos navegadores */
   -moz-appearance: none;
   appearance: none;
@@ -209,11 +209,12 @@ footer {
 #talla option {
   background-color: rgba(255, 255, 255, 0.85); /* Fondo casi transparente para las opciones */
   color: #000; /* Color del texto de las opciones */
-  font-size: 16px; /* Tamaño de fuente de las opciones */
+  font-size: 14px; /* Tamaño de fuente reducido */
   -webkit-appearance: none; /* Eliminar el estilo nativo del desplegable en algunos navegadores */
   -moz-appearance: none;
   appearance: none;
 }
+
 
 .link {
   position: relative;
@@ -307,12 +308,13 @@ button[type="submit"] {
 }
 
 button[type="submit"] {
-  padding-left: 100px; /* Ajusta el relleno izquierdo del botón */
-  margin-left: 100px; /* Compensa el espacio perdido con un margen negativo */
   background-color: #ff6ac1; /* Color de fondo del botón */
   color: #fff; /* Color del texto del botón */
   cursor: pointer; /* Cursor al pasar sobre el botón */
   transition: background-color 0.3s ease; /* Transición suave */
+  padding: 10px 20px; /* Ajusta el relleno interno */
+  margin-left: -5px; /* Aplica un margen izquierdo negativo */
+  margin: 0 auto; /* Centra el botón horizontalmente */
 }
 
 button[type="submit"]:hover {
