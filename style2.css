@@ -307,13 +307,13 @@ button[type="submit"] {
 }
 
 button[type="submit"] {
-  margin-left: 5%; /* Agrega un margen izquierdo del 5% */
+  padding-left: 10px; /* Ajusta el relleno izquierdo del botón */
+  margin-left: -10px; /* Compensa el espacio perdido con un margen negativo */
   background-color: #ff6ac1; /* Color de fondo del botón */
   color: #fff; /* Color del texto del botón */
   cursor: pointer; /* Cursor al pasar sobre el botón */
   transition: background-color 0.3s ease; /* Transición suave */
 }
-
 
 button[type="submit"]:hover {
   background-color: #ff00ff; /* Color de fondo al pasar sobre el botón */
