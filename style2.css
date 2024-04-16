@@ -1,3 +1,4 @@
+
 /* Estilo para el formulario */
 form {
   max-width: 400px;
@@ -59,25 +60,28 @@ select:focus {
   box-shadow: 0 0 5px rgba(102, 205, 170, 0.5); /* Sombra verde menta */
 }
 
-body {
-  font-family: TT Slabs Trial Black Italic , sans-serif;
-  margin: 0;
+#formulario-container {
+  text-align: center; /* Alinea el contenido al centro horizontalmente */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  max-width: 800px; /* Ajusta el ancho máximo del contenedor */
+  padding: 20px; /* Agrega un poco de espacio alrededor del formulario */
+}
+#formulario-container iframe {
+  width: 100%; /* Ancho deseado */
+  height: 800px; /* Alto deseado */
 }
 
-  #producto {
-    display: none;
-  }
-
-header {
-  background: linear-gradient(to bottom right, #A51C30, #ff0077);
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sport.es%2Fes%2Fnoticias%2Fchampions%2Fexcusa-inverosimil-sergio-ramos-84425544&psig=AOvVaw1owmv07v6mHVpPk4ygg8a_&ust=1679359041086000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCJjttoqi6f0CFQAAAAAdAAAAABAE");
   background-size: cover;
-  background-color:#a60230 ;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  max-width: 100%;
-  max-height: 0%;
+  z-index: -1;
 }
+
 
 nav a {
   color: #fff;
@@ -89,6 +93,8 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+
+
 
 h1 {
   font-size: 48px;
@@ -110,15 +116,23 @@ main {
   padding: 50px;
 }
 
+#espe {
+  display: none;
+}
+
+
 strong {
   margin-bottom: 400px;
   font-size:48px;
   font-family: 'Lexend Deca', sans-serif;
+
 }
 
 section {
   margin-bottom: 40px;
 }
+
+
 
 h3 {
   font-size: 32px;
@@ -129,6 +143,19 @@ h3 {
 p {
   font-size: 20px;
   font-family: 'Cantarell', sans-serif;
+  
+}
+
+#creditos {
+  
+  margin-top: 1000px;
+}
+
+
+h2 {
+   max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 h4 {
@@ -140,15 +167,49 @@ h4 {
   font-optical-sizing:auto ;
 }
 
+h3 {
+  font-weight: bolder;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 54px;
+  margin-bottom: 25px;
+  margin-left: 20px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
 h6 {
   font-family: 'Rye', cursive;
   font-size:18px;
   margin: 0; 
-}
+  }
+
+
 
 ul {
   font-family: 'Darker Grotesque', cursive;
   font-size:32px;
+
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
 }
 
 h5 img {
@@ -176,6 +237,12 @@ footer {
   margin-left: 30px;
 }
 
+#imagen1:hover {
+  filter: brightness(120%);
+}
+
+
+
 .link {
   position: relative;
 }
@@ -196,6 +263,10 @@ footer {
   transform: scaleX(1);
 }
 
+
+
+
+
 .product {
   background-color: #eee;
   border: 1px solid #ccc;
@@ -206,6 +277,7 @@ footer {
   border: 1px solid #000;
   padding: 20px;
   text-align: center;
+  
 }
 
 .product img {
@@ -261,6 +333,8 @@ body {
   width: 30%;
 }
 
+
+
 .left-column {
   width: 100%;
   float: left;
@@ -281,6 +355,7 @@ body {
 .image-container {
   flex: 1;
 }
+
 
 .form-container {
   flex: 1;
@@ -343,6 +418,7 @@ body {
   padding: 10px; /* ajusta el espacio interior de las opciones */
 }
 
+
 @media only screen and (max-width: 767px) {
   #camiseta,
   #camiseta2,
@@ -352,80 +428,6 @@ body {
   }
 }
 
-form {
-  padding: 200px;
-  margin-bottom: 65px;
-}
 
-label {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-input,
-button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-button {
-  background-color: #007bff;
-  color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #0062cc;
-}
-
-input:invalid {
-  border: 2px solid red;
-}
-
-input:focus {
-  outline: none;
-  box-shadow: 0 0 5px #007bff;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 20px;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  max-width: 1000px; /* Ajusta el ancho máximo del contenedor */
-}
-
-.box img {
-  max-width: 120%;
-  max-height: 120%;
-  object-fit: contain;
-  margin-bottom: 10px;
-}
-
-@media only screen and (max-width: 767px) {
-  .container {
-    display: block;
-  }
-
-  .box {
-    margin: 0 auto;
-    max-width: 120%;
-  }
-}
 
   
