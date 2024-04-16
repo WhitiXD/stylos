@@ -69,7 +69,9 @@ select:focus {
   border-color: #007bff;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
-
+select:focus {
+  background-color: rgba(255, 255, 255, 0.5); /* Fondo semi transparente al enfocar */
+}
 /* Estilo para mensajes de error */
 .error-message {
   color: red;
