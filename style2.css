@@ -191,14 +191,15 @@ footer {
 }
 
 #talla {
+  width: calc(80% - 24px); /* Reducimos el ancho al 80% */
   padding: 5px; /* Reducimos el espaciado interno */
   margin: 0 auto; /* Centramos horizontalmente */
   margin-bottom: 20px; /* Espacio entre elementos */
   border: 1px solid #007bff; /* Borde */
   border-radius: 5px; /* Borde redondeado */
   background-color: rgba(255, 255, 255, 0.2); /* Fondo casi transparente */
-  color: #000; /* Color del texto */
-  font-size: 14px; /* Tamaño de fuente reducido */
+  color: ##5b6066; /* Color del texto */
+  font-size: 24px; /* Tamaño de fuente reducido */
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Sombra */
   -webkit-appearance: none; /* Eliminar el estilo nativo del desplegable en algunos navegadores */
   -moz-appearance: none;
@@ -208,10 +209,7 @@ footer {
 #talla option {
   background-color: rgba(255, 255, 255, 0.85); /* Fondo casi transparente para las opciones */
   color: ##5b6066; /* Color del texto de las opciones */
-  font-size: 24px; /* Tamaño de fuente reducido */
-  -webkit-appearance: none; /* Eliminar el estilo nativo del desplegable en algunos navegadores */
-  -moz-appearance: none;
-  appearance: none;
+  font-size: 18px; /* Tamaño de fuente reducido */
 }
 
 
