@@ -373,8 +373,7 @@ select:focus {
 
 .form-container {
   flex: 1;
-  padding: 20px;
-  background-color: #f2f2f2;
+  padding: 20px;;
 }
 
 .form-container h2 {
