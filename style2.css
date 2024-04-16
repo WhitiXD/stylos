@@ -193,6 +193,7 @@ footer {
 #talla {
   width: calc(100% - 24px); /* Restamos 24px para dejar espacio para la flecha del desplegable */
   padding: 10px; /* Espaciado interno */
+  margin-left: 3%;
   margin-bottom: 20px; /* Espacio entre elementos */
   border: 2px solid #007bff; /* Borde */
   border-radius: 10px; /* Borde redondeado */
@@ -316,7 +317,10 @@ button[type="submit"]:hover {
   background-color: #ff00ff; /* Color de fondo al pasar sobre el botón */
 }
 input[type="email"]:invalid {
-  border-color: initial; /* Restaurar el color de borde predeterminado */
+  border-color: linear-gradient(135deg, #c850c0, #4158d0;
+}
+input[type="text"]:invalid {
+  border-color: linear-gradient(135deg, #c850c0, #4158d0; 
 }
 /* Estilo para etiquetas */
 label {
