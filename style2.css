@@ -260,8 +260,8 @@ body {
 }
 /* Estilos para el formulario */
 form {
-  max-width: 400px;
-  margin: 0 auto;
+  max-width: 400px; /* Ancho máximo del formulario */
+  margin: 0 auto; /* Centrar el formulario horizontalmente */
   padding: 20px;
   border-radius: 10px;
   background: linear-gradient(135deg, #c850c0, #4158d0);
@@ -270,31 +270,28 @@ form {
 
 input[type="text"],
 input[type="email"],
-select {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 2px solid #007bff; /* Cambiado el color del borde a azul */
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.3);
-  color: #fff;
-  font-size: 16px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+select,
+button[type="submit"] {
+  width: 100%; /* Establecer ancho al 100% para ocupar todo el espacio disponible */
+  padding: 10px; /* Espaciado interno */
+  margin-bottom: 20px; /* Espacio entre elementos */
+  border: 2px solid #007bff; /* Borde */
+  border-radius: 10px; /* Borde redondeado */
+  background-color: rgba(255, 255, 255, 0.3); /* Fondo con transparencia */
+  color: #fff; /* Color del texto */
+  font-size: 16px; /* Tamaño de fuente */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Sombra */
 }
 
 button[type="submit"] {
-  background-color: #ff6ac1;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 10px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  background-color: #ff6ac1; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  cursor: pointer; /* Cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave */
 }
 
 button[type="submit"]:hover {
-  background-color: #ff00ff;
+  background-color: #ff00ff; /* Color de fondo al pasar sobre el botón */
 }
 
 /* Estilo para etiquetas */
