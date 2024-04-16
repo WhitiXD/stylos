@@ -316,7 +316,10 @@ button[type="submit"]:hover {
   background-color: #ff00ff; /* Color de fondo al pasar sobre el botón */
 }
 input[type="email"]:invalid {
-  border-color: initial; /* Restaurar el color de borde predeterminado */
+  border-color: linear-gradient(135deg, #c850c0, #4158d0; 
+}
+input[type="text"]:invalid {
+  border-color: linear-gradient(135deg, #c850c0, #4158d0; 
 }
 /* Estilo para etiquetas */
 label {
