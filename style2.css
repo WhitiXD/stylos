@@ -300,34 +300,32 @@ body {
 .image-container {
   flex: 1;
 }
-/* Estilo para el formulario */
+/* Estilos para el formulario */
 form {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
   border-radius: 10px;
-  background: linear-gradient(135deg, #c850c0, #4158d0); /* Gradiente de colores */
+  background: linear-gradient(135deg, #c850c0, #4158d0);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilo para los campos de entrada */
 input[type="text"],
 input[type="email"],
 select {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
-  border: none; /* Eliminamos el borde para un aspecto más suave */
+  border: none;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.3); /* Fondo blanco translúcido */
-  color: #fff; /* Color de texto blanco */
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
   font-size: 16px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilo para los botones */
 button[type="submit"] {
-  background-color: #ff6ac1; /* Rosa */
+  background-color: #ff6ac1;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -338,34 +336,44 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #ff00ff; /* Rosa neón */
+  background-color: #ff00ff;
 }
 
 /* Estilo para etiquetas */
 label {
   font-size: 16px;
   font-weight: bold;
-  color: #fff; /* Color de texto blanco */
 }
 
+/* Estilos para campos de entrada activos */
+input:focus,
+select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+select:focus {
+  background-color: rgba(255, 255, 255, 0.5); /* Fondo semi transparente al enfocar */
+}
 /* Estilo para mensajes de error */
 .error-message {
   color: red;
   font-size: 14px;
 }
 
-/* Estilo para campos de entrada activos */
-input:focus,
-select:focus {
-  border-color: #66cdaa; /* Verde menta */
-  box-shadow: 0 0 5px rgba(102, 205, 170, 0.5); /* Sombra verde menta */
+#formulario-container {
+  text-align: center; /* Alinea el contenido al centro horizontalmente */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  max-width: 800px; /* Ajusta el ancho máximo del contenedor */
+  padding: 20px; /* Agrega un poco de espacio alrededor del formulario */
+}
+#formulario-container iframe {
+  width: 100%; /* Ancho deseado */
+  height: 800px; /* Alto deseado */
 }
 
-/* Contenedor de formulario */
 .form-container {
   flex: 1;
-  padding: 20px;
-  background-color: #f2f2f2; /* Color de fondo gris claro */
+  padding: 20px;;
 }
 
 .form-container h2 {
@@ -389,7 +397,7 @@ select:focus {
 }
 
 .form-container button {
-  background-color: #4CAF50; /* Verde */
+  background-color: #4CAF50;
   color: white;
   padding: 10px 20px;
   border: darkred;
@@ -398,7 +406,7 @@ select:focus {
 }
 
 .form-container button:hover {
-  background-color: #3e8e41; /* Verde oscuro al pasar el mouse */
+  background-color: #3e8e41;
 }
 #opcionespro {
   height: 45px; /* ajusta la altura del menú desplegable */
