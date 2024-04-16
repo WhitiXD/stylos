@@ -1,12 +1,11 @@
-
 body {
   font-family: TT Slabs Trial Black Italic , sans-serif;
   margin: 0;
 }
 
-  #producto {
-    display: none;
-  }
+#producto {
+  display: none;
+}
 
 header {
   background: linear-gradient(to bottom right, #A51C30, #ff0077);
@@ -17,76 +16,6 @@ header {
   text-align: center;
   max-width: 100%;
   max-height: 0%;
-}
-/* Estilos para el formulario */
-form {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #c850c0, #4158d0);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-}
-
-input[type="text"],
-input[type="email"],
-select {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.3);
-  color: #fff;
-  font-size: 16px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-}
-
-button[type="submit"] {
-  background-color: #ff6ac1;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 10px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button[type="submit"]:hover {
-  background-color: #ff00ff;
-}
-
-/* Estilo para etiquetas */
-label {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-/* Estilos para campos de entrada activos */
-input:focus,
-select:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-select:focus {
-  background-color: rgba(255, 255, 255, 0.5); /* Fondo semi transparente al enfocar */
-}
-/* Estilo para mensajes de error */
-.error-message {
-  color: red;
-  font-size: 14px;
-}
-
-#formulario-container {
-  text-align: center; /* Alinea el contenido al centro horizontalmente */
-  margin: 0 auto; /* Centra el contenedor horizontalmente */
-  max-width: 800px; /* Ajusta el ancho máximo del contenedor */
-  padding: 20px; /* Agrega un poco de espacio alrededor del formulario */
-}
-#formulario-container iframe {
-  width: 100%; /* Ancho deseado */
-  height: 800px; /* Alto deseado */
 }
 
 .bg {
@@ -100,7 +29,6 @@ select:focus {
   z-index: -1;
 }
 
-
 nav a {
   color: #fff;
   display: inline-block;
@@ -111,8 +39,6 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
-
-
 
 h1 {
   font-size: 48px;
@@ -138,19 +64,15 @@ main {
   display: none;
 }
 
-
 strong {
   margin-bottom: 400px;
   font-size:48px;
   font-family: 'Lexend Deca', sans-serif;
-
 }
 
 section {
   margin-bottom: 40px;
 }
-
-
 
 h3 {
   font-size: 32px;
@@ -161,19 +83,6 @@ h3 {
 p {
   font-size: 20px;
   font-family: 'Cantarell', sans-serif;
-  
-}
-
-#creditos {
-  
-  margin-top: 1000px;
-}
-
-
-h2 {
-   max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
 }
 
 h4 {
@@ -196,21 +105,17 @@ h3 {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
-
 }
 
 h6 {
   font-family: 'Rye', cursive;
   font-size:18px;
   margin: 0; 
-  }
-
-
+}
 
 ul {
   font-family: 'Darker Grotesque', cursive;
   font-size:32px;
-
 }
 
 nav ul {
@@ -259,8 +164,6 @@ footer {
   filter: brightness(120%);
 }
 
-
-
 .link {
   position: relative;
 }
@@ -281,10 +184,6 @@ footer {
   transform: scaleX(1);
 }
 
-
-
-
-
 .product {
   background-color: #eee;
   border: 1px solid #ccc;
@@ -295,7 +194,6 @@ footer {
   border: 1px solid #000;
   padding: 20px;
   text-align: center;
-  
 }
 
 .product img {
@@ -311,154 +209,6 @@ body {
   background: linear-gradient(to bottom right, #f9d9eb, #e77eb9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.tarjeta-credito {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-}
-
-.tarjeta-credito label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.tarjeta-credito input[type="text"] {
-  width: 100%;
-  padding: 10px;
-  border-radius: 3px;
-  border: 1px solid #ccc;
-  margin-bottom: 20px;
-}
-
-.tarjeta-credito .fecha-expiracion {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.tarjeta-credito .fecha-expiracion select {
-  width: 48%;
-  padding: 10px;
-  border-radius: 3px;
-  border: 1px solid #ccc;
-}
-
-.tarjeta-credito #cvv {
-  width: 30%;
-}
-
-
-
-.left-column {
-  width: 100%;
-  float: left;
-}
-.right-column {
-  width: 50%;
-  float: right;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-.image-container {
-  flex: 1;
-}
-
-
-.form-container {
-  flex: 1;
-  padding: 20px;
-  background-color: #f2f2f2;
-}
-
-.form-container h2 {
-  margin-top: 0;
-}
-
-.form-container label {
-  display: block;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-
-.form-container input,
-.form-container select {
-  display: block;
-  width: 95%;
-  padding: 10px;
-  border-radius: 10px;
-  border: solid;
-  margin-bottom: 15px;
-}
-
-.form-container button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: darkred;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.form-container button:hover {
-  background-color: #3e8e41;
-}
-
-#opcionespro {
-  height: 45px; /* ajusta la altura del menú desplegable */
-  width: 550px; /* ajusta el ancho del menú desplegable */
-  font-size: 15px; /* ajusta el tamaño de fuente del menú desplegable */
-}
-
-#opcionespro option {
-  font-size: 16px; /* ajusta el tamaño de fuente de las opciones */
-  padding: 10px; /* ajusta el espacio interior de las opciones */
-}
-
-#opcionesco {
-  height: 45px; /* ajusta la altura del menú desplegable */
-  width: 550px; /* ajusta el ancho del menú desplegable */
-  font-size: 15px; /* ajusta el tamaño de fuente del menú desplegable */
-}
-
-#opcionesco option {
-  font-size: 16px; /* ajusta el tamaño de fuente de las opciones */
-  padding: 10px; /* ajusta el espacio interior de las opciones */
-}
-
-
-
-#cami {
-margin-bottom: 60px;
- margin-left: 535px;
- text-align: center;
- max-width: 800px;
-margin: 0 auto;
-text-align: center;
-
-
-}
-
-
-image  {
-  size: 10px;
-  max-width: 60%;
-  max-height: 40%;
-
-
-}
-
-
 @media only screen and (max-width: 767px) {
   #camiseta,
   #camiseta2,
@@ -468,14 +218,10 @@ image  {
   }
 }
 
-
-
-
+/* Estilos para el formulario */
 form {
-
   padding: 200px;
   margin-bottom: 65px;
-
 }
 
 label {
@@ -521,53 +267,6 @@ input:focus {
   grid-gap: 20px;
 }
 
-
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  max-width: 1000px; /* Ajusta el ancho máximo del contenedor */
-}
-
-
-
-.box img {
-  max-width: 120%;
-  max-height: 120%;
-  object-fit: contain;
-  margin-bottom: 10px;
-}
-
-/* Estilos para dispositivos móviles */
-@media only screen and (max-width: 767px) {
-  .container {
-    display: block;
-
-
-}
-.container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-  justify-items: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  text-align: center; /* Alineación de texto centrada */
-  margin: 0 auto; /* Centra el contenedor horizontalmente */
-  max-width: 1000px; /* Ajusta el ancho máximo del contenedor */
-  padding: 20px;
-}
-
-.box {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 20px;
-  text-align: center;
-}
-
 .box img {
   max-width: 120%;
   max-height: 120%;
@@ -585,31 +284,4 @@ input:focus {
     margin: 0 auto;
     max-width: 120%;
   }
-}
-.container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-  justify-items: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  text-align: center; /* Alineación de texto centrada */
-  max-width: 1000px; /* Ajusta el ancho máximo del contenedor */
-  margin: 0 auto; /* Centra el contenedor horizontalmente */
-}
-
-.box {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 0; /* Ajusta el espacio interno a 0 para eliminar el espacio blanco */
-  text-align: center;
-}
-
-.box img {
-  max-width: 120%;
-  max-height: 120%;
-  object-fit: contain;
-  display: block; /* Añade esta propiedad para eliminar el espacio alrededor de la imagen */
-}
-.contenedor-imagen {
-  background-color: transparent;
 }
