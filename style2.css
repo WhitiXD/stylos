@@ -194,7 +194,7 @@ footer {
   width: calc(100% - 24px); /* Restamos 24px para dejar espacio para la flecha del desplegable */
   padding: 10px; /* Espaciado interno */
   margin-bottom: 20px; /* Espacio entre elementos */
-  margin-right:-5%;
+  margin-left:5%;
   border: 2px solid #007bff; /* Borde */
   border-radius: 10px; /* Borde redondeado */
   background-color: rgba(255, 255, 255, 0.2); /* Fondo casi transparente */
@@ -283,7 +283,7 @@ body {
 }
 /* Estilos para el formulario */
 form {
-  max-width: 600px; /* Ajusta el ancho máximo del formulario */
+  max-width: 120%; /* Ajusta el ancho máximo del formulario */
   margin: 0 auto; /* Centra el formulario horizontalmente */
   padding: 40px; /* Aumenta el espacio interior del formulario */
   border-radius: 10px;
@@ -307,11 +307,13 @@ button[type="submit"] {
 }
 
 button[type="submit"] {
+  margin-left: 5%; /* Agrega un margen izquierdo del 5% */
   background-color: #ff6ac1; /* Color de fondo del botón */
   color: #fff; /* Color del texto del botón */
   cursor: pointer; /* Cursor al pasar sobre el botón */
   transition: background-color 0.3s ease; /* Transición suave */
 }
+
 
 button[type="submit"]:hover {
   background-color: #ff00ff; /* Color de fondo al pasar sobre el botón */
