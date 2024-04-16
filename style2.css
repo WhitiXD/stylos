@@ -194,6 +194,7 @@ footer {
   width: calc(100% - 24px); /* Restamos 24px para dejar espacio para la flecha del desplegable */
   padding: 10px; /* Espaciado interno */
   margin-bottom: 20px; /* Espacio entre elementos */
+  margin-left:5%;
   border: 2px solid #007bff; /* Borde */
   border-radius: 10px; /* Borde redondeado */
   background-color: rgba(255, 255, 255, 0.2); /* Fondo casi transparente */
@@ -314,6 +315,25 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #ff00ff; /* Color de fondo al pasar sobre el botón */
+}
+input[type="email"]:invalid,
+input[type="text"]:invalid {
+  border-color: transparent; /* Hacer el borde transparente */
+  position: relative;
+}
+
+input[type="email"]:invalid::before,
+input[type="text"]:invalid::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid;
+  border-image: linear-gradient(135deg, #c850c0, #4158d0) 1;
+  border-radius: inherit;
+  pointer-events: none; /* Para que el pseudo-elemento no interfiera con los eventos del input */
 }
 
 /* Estilo para etiquetas */
