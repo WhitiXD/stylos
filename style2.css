@@ -370,6 +370,8 @@ select:focus {
   height: 45px; /* ajusta la altura del menú desplegable */
   width: 550px; /* ajusta el ancho del menú desplegable */
   font-size: 15px; /* ajusta el tamaño de fuente del menú desplegable */
+  background-color: rgba(255, 255, 255, 0.8); /* Cambia el último valor para ajustar la opacidad */
+  border: 1px solid #000; /* Agrega un borde para mejorar la visibilidad */
 }
 
 #opcionespro option {
