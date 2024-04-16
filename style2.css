@@ -2,10 +2,10 @@
 form {
   max-width: 400px;
   margin: 0 auto;
-  background-color: #f0f0f0; /* Fondo gris claro */
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #c850c0, #4158d0); /* Gradiente de colores */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Estilo para los campos de entrada */
@@ -15,8 +15,10 @@ select {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 2px solid #fff; /* Borde blanco */
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3); /* Fondo blanco translúcido */
+  color: #fff; /* Color de texto blanco */
   font-size: 16px;
 }
 
@@ -26,9 +28,10 @@ button[type="submit"] {
   color: #fff;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button[type="submit"]:hover {
@@ -39,7 +42,7 @@ button[type="submit"]:hover {
 label {
   font-size: 16px;
   font-weight: bold;
-  color: #663399; /* Morado */
+  color: #fff; /* Color de texto blanco */
 }
 
 /* Estilo para mensajes de error */
@@ -54,7 +57,6 @@ select:focus {
   border-color: #66cdaa; /* Verde menta */
   box-shadow: 0 0 5px rgba(102, 205, 170, 0.5); /* Sombra verde menta */
 }
-
 
 body {
   font-family: TT Slabs Trial Black Italic , sans-serif;
