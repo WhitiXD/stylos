@@ -1,3 +1,55 @@
+/* Estilo para el formulario */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Estilo para los campos de entrada */
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Estilo para los botones */
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para etiquetas */
+label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Estilo para mensajes de error */
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+/* Estilo para campos de entrada activos */
+input:focus,
+select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
 body {
   font-family: TT Slabs Trial Black Italic , sans-serif;
   margin: 0;
@@ -17,6 +69,58 @@ header {
   max-width: 100%;
   max-height: 0%;
 }
+/* Estilo para el formulario */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Estilo para los campos de entrada */
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Estilo para los botones */
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para etiquetas */
+label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Estilo para mensajes de error */
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+/* Estilo para campos de entrada activos */
+input:focus,
+select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
 #formulario-container {
   text-align: center; /* Alinea el contenido al centro horizontalmente */
   margin: 0 auto; /* Centra el contenedor horizontalmente */
@@ -553,55 +657,3 @@ input:focus {
   background-color: transparent;
 }
   
-/* Estilo para el formulario */
-form {
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-/* Estilo para los campos de entrada */
-input[type="text"],
-input[type="email"],
-select {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-/* Estilo para los botones */
-button[type="submit"] {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-button[type="submit"]:hover {
-  background-color: #0056b3;
-}
-
-/* Estilo para etiquetas */
-label {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-/* Estilo para mensajes de error */
-.error-message {
-  color: red;
-  font-size: 14px;
-}
-
-/* Estilo para campos de entrada activos */
-input:focus,
-select:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
