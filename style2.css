@@ -207,7 +207,7 @@ footer {
 
 #talla option {
   background-color: rgba(255, 255, 255, 0.85); /* Fondo casi transparente para las opciones */
-  color: #000; /* Color del texto de las opciones */
+  color: ##5b6066; /* Color del texto de las opciones */
   font-size: 24px; /* Tamaño de fuente reducido */
   -webkit-appearance: none; /* Eliminar el estilo nativo del desplegable en algunos navegadores */
   -moz-appearance: none;
