@@ -2,7 +2,7 @@
 form {
   max-width: 400px;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: #f0f0f0; /* Fondo gris claro */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -22,7 +22,7 @@ select {
 
 /* Estilo para los botones */
 button[type="submit"] {
-  background-color: #007bff;
+  background-color: #ff6ac1; /* Rosa */
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -32,13 +32,14 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: #ff00ff; /* Rosa neón */
 }
 
 /* Estilo para etiquetas */
 label {
   font-size: 16px;
   font-weight: bold;
+  color: #663399; /* Morado */
 }
 
 /* Estilo para mensajes de error */
@@ -50,8 +51,8 @@ label {
 /* Estilo para campos de entrada activos */
 input:focus,
 select:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  border-color: #66cdaa; /* Verde menta */
+  box-shadow: 0 0 5px rgba(102, 205, 170, 0.5); /* Sombra verde menta */
 }
 
 
