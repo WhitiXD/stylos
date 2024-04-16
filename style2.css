@@ -315,7 +315,9 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #ff00ff; /* Color de fondo al pasar sobre el botón */
 }
-
+input[type="email"]:invalid {
+  border-color: initial; /* Restaurar el color de borde predeterminado */
+}
 /* Estilo para etiquetas */
 label {
   font-size: 16px;
