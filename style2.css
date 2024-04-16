@@ -15,11 +15,12 @@ select {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
-  border: 2px solid #fff; /* Borde blanco */
+  border: none; /* Eliminamos el borde para un aspecto más suave */
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.3); /* Fondo blanco translúcido */
   color: #fff; /* Color de texto blanco */
   font-size: 16px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
 }
 
 /* Estilo para los botones */
@@ -57,6 +58,7 @@ select:focus {
   border-color: #66cdaa; /* Verde menta */
   box-shadow: 0 0 5px rgba(102, 205, 170, 0.5); /* Sombra verde menta */
 }
+
 
 body {
   font-family: TT Slabs Trial Black Italic , sans-serif;
