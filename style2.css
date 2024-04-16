@@ -308,7 +308,7 @@ button[type="submit"] {
 
 button[type="submit"] {
   padding-left: 100px; /* Ajusta el relleno izquierdo del botón */
-  margin-left: -100px; /* Compensa el espacio perdido con un margen negativo */
+  margin-left: 100px; /* Compensa el espacio perdido con un margen negativo */
   background-color: #ff6ac1; /* Color de fondo del botón */
   color: #fff; /* Color del texto del botón */
   cursor: pointer; /* Cursor al pasar sobre el botón */
