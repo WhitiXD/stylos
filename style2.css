@@ -189,7 +189,20 @@ footer {
 #imagen1:hover {
   filter: brightness(120%);
 }
-
+button[type="submit"] {
+  width: 100%; /* Establece el ancho al 100% para ocupar todo el espacio disponible */
+  padding: 15px; /* Aumenta el espacio interno de los elementos */
+  margin-bottom: 30px; /* Aumenta el espacio entre elementos */
+  border: 2px solid #007bff; /* Borde */
+  border-radius: 10px; /* Borde redondeado */
+  background-color: rgba(255, 255, 255, 0.3); /* Fondo con transparencia */
+  color: #000; /* Color del texto */
+  font-size: 18px; /* Tamaño de fuente */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+button[type="submit"] {
+  padding: 15px 30px; /* Ajusta el relleno interno del botón */
+}
 #talla {
   width: calc(80% - 24px); /* Reducimos el ancho al 80% */
   padding: 5px; /* Reducimos el espaciado interno */
@@ -215,8 +228,18 @@ footer {
   -moz-appearance: none;
   appearance: none;
 }
-
-
+#talla,
+#producto {
+  width: 100%; /* Ajusta el ancho al 100% para ocupar todo el espacio disponible */
+  padding: 15px; /* Aumenta el espacio interno */
+  margin-bottom: 30px; /* Aumenta el espacio entre elementos */
+  border: 2px solid #007bff; /* Borde */
+  border-radius: 10px; /* Borde redondeado */
+  background-color: rgba(255, 255, 255, 0.3); /* Fondo con transparencia */
+  color: #000; /* Color del texto */
+  font-size: 18px; /* Tamaño de fuente */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+}
 .link {
   position: relative;
 }
