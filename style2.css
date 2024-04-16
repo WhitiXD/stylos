@@ -1,43 +1,4 @@
-/* Estilo para el formulario */
-form {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #c850c0, #4158d0); /* Gradiente de colores */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-}
 
-/* Estilo para los campos de entrada */
-input[type="text"],
-input[type="email"],
-select {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: none; /* Eliminamos el borde para un aspecto más suave */
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.3); /* Fondo blanco translúcido */
-  color: #fff; /* Color de texto blanco */
-  font-size: 16px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
-}
-
-/* Estilo para los botones */
-button[type="submit"] {
-  background-color: #ff6ac1; /* Rosa */
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 10px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button[type="submit"]:hover {
-  background-color: #ff00ff; /* Rosa neón */
-}
 body {
   font-family: TT Slabs Trial Black Italic , sans-serif;
   margin: 0;
@@ -57,10 +18,14 @@ header {
   max-width: 100%;
   max-height: 0%;
 }
-/* Estilo para el formulario */
+/* Estilos para el formulario */
 form {
   max-width: 400px;
   margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #c850c0, #4158d0);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 input[type="text"],
@@ -69,26 +34,27 @@ select {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
-  border-radius: 5px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
   font-size: 16px;
-  border: 2px solid;
-  border-image: linear-gradient(to right, #4158d0, #c850c0);
-  border-image-slice: 1;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilo para los botones */
 button[type="submit"] {
-  background-color: #007bff;
+  background-color: #ff6ac1;
   color: #fff;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: #ff00ff;
 }
 
 /* Estilo para etiquetas */
@@ -97,17 +63,17 @@ label {
   font-weight: bold;
 }
 
-/* Estilo para mensajes de error */
-.error-message {
-  color: red;
-  font-size: 14px;
-}
-
-/* Estilo para campos de entrada activos */
+/* Estilos para campos de entrada activos */
 input:focus,
 select:focus {
   border-color: #007bff;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilo para mensajes de error */
+.error-message {
+  color: red;
+  font-size: 14px;
 }
 
 #formulario-container {
