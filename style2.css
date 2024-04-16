@@ -1,4 +1,3 @@
-
 /* Estilo para el formulario */
 form {
   max-width: 400px;
@@ -39,12 +38,63 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #ff00ff; /* Rosa neón */
 }
+body {
+  font-family: TT Slabs Trial Black Italic , sans-serif;
+  margin: 0;
+}
+
+  #producto {
+    display: none;
+  }
+
+header {
+  background: linear-gradient(to bottom right, #A51C30, #ff0077);
+  background-size: cover;
+  background-color:#a60230 ;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  max-width: 100%;
+  max-height: 0%;
+}
+/* Estilo para el formulario */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: 2px solid;
+  border-image: linear-gradient(to right, #4158d0, #c850c0);
+  border-image-slice: 1;
+}
+
+/* Estilo para los botones */
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
 
 /* Estilo para etiquetas */
 label {
   font-size: 16px;
   font-weight: bold;
-  color: #fff; /* Color de texto blanco */
 }
 
 /* Estilo para mensajes de error */
@@ -56,8 +106,8 @@ label {
 /* Estilo para campos de entrada activos */
 input:focus,
 select:focus {
-  border-color: #66cdaa; /* Verde menta */
-  box-shadow: 0 0 5px rgba(102, 205, 170, 0.5); /* Sombra verde menta */
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 #formulario-container {
@@ -419,6 +469,28 @@ body {
 }
 
 
+
+#cami {
+margin-bottom: 60px;
+ margin-left: 535px;
+ text-align: center;
+ max-width: 800px;
+margin: 0 auto;
+text-align: center;
+
+
+}
+
+
+image  {
+  size: 10px;
+  max-width: 60%;
+  max-height: 40%;
+
+
+}
+
+
 @media only screen and (max-width: 767px) {
   #camiseta,
   #camiseta2,
@@ -430,4 +502,146 @@ body {
 
 
 
-  
+
+form {
+
+  padding: 200px;
+  margin-bottom: 65px;
+
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input,
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0062cc;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #007bff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1000px; /* Ajusta el ancho máximo del contenedor */
+}
+
+
+
+.box img {
+  max-width: 120%;
+  max-height: 120%;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+  .container {
+    display: block;
+
+
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  justify-items: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  text-align: center; /* Alineación de texto centrada */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  max-width: 1000px; /* Ajusta el ancho máximo del contenedor */
+  padding: 20px;
+}
+
+.box {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.box img {
+  max-width: 120%;
+  max-height: 120%;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+  .container {
+    display: block;
+  }
+
+  .box {
+    margin: 0 auto;
+    max-width: 120%;
+  }
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  justify-items: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  text-align: center; /* Alineación de texto centrada */
+  max-width: 1000px; /* Ajusta el ancho máximo del contenedor */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.box {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 0; /* Ajusta el espacio interno a 0 para eliminar el espacio blanco */
+  text-align: center;
+}
+
+.box img {
+  max-width: 120%;
+  max-height: 120%;
+  object-fit: contain;
+  display: block; /* Añade esta propiedad para eliminar el espacio alrededor de la imagen */
+}
+.contenedor-imagen {
+  background-color: transparent;
+}
