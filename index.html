@@ -81,57 +81,35 @@
   <div id="productos-no-disponibles">
   <h2>Productos No Disponibles</h2>
  <section class="articulo">
-  <script>
-    $(function() {
-      printfulInit('xIPkW9XCbi3F7JEcxxRBfzP48b1ocTLRBeYpoY8N');
-    });
-    
-    document.addEventListener("DOMContentLoaded", function () {
-      const productosNoDisponiblesContainer = document.getElementById("productos-no-disponibles");
-      const mostrarNoDisponiblesButton = document.getElementById("mostrar-no-disponibles");
-      const productos = document.querySelectorAll(".product");
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const productosNoDisponiblesContainer = document.getElementById("productos-no-disponibles");
+  const mostrarNoDisponiblesButton = document.getElementById("mostrar-no-disponibles");
+  const productos = document.querySelectorAll(".product");
 
-      // Oculta inicialmente los productos no disponibles
+  // Oculta inicialmente los productos no disponibles
+  productosNoDisponiblesContainer.style.display = "none";
+
+  // Evento de clic para mostrar/ocultar productos no disponibles
+  mostrarNoDisponiblesButton.addEventListener("click", function () {
+    if (productosNoDisponiblesContainer.style.display === "none") {
+      productosNoDisponiblesContainer.style.display = "block";
+      mostrarNoDisponiblesButton.textContent = "Ocultar Productos No Disponibles";
+    } else {
       productosNoDisponiblesContainer.style.display = "none";
+      mostrarNoDisponiblesButton.textContent = "Mostrar Productos No Disponibles";
+    }
+  });
 
-      // Evento de clic para mostrar/ocultar productos no disponibles
-      mostrarNoDisponiblesButton.addEventListener("click", function () {
-        if (productosNoDisponiblesContainer.style.display === "none") {
-          productosNoDisponiblesContainer.style.display = "block";
-          mostrarNoDisponiblesButton.textContent = "Ocultar Productos No Disponibles";
-        } else {
-          productosNoDisponiblesContainer.style.display = "none";
-          mostrarNoDisponiblesButton.textContent = "Mostrar Productos No Disponibles";
-        }
-      });
-
-      // Mueve los productos no disponibles al contenedor correspondiente
-      productos.forEach((producto) => {
-        const disponible = producto.getAttribute("data-disponible");
-        if (disponible === "false") {
-          productosNoDisponiblesContainer.querySelector('.productos-disponibles').appendChild(producto);
-        }
-      });
-      
-      // Efecto de carga progresiva para imágenes
-      const lazyImages = document.querySelectorAll('img');
-      
-      const imageObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            const img = entry.target;
-            img.src = img.getAttribute('src');
-            img.classList.add('loaded');
-            observer.unobserve(img);
-          }
-        });
-      });
-
-      lazyImages.forEach(img => {
-        imageObserver.observe(img);
-      });
-    });
-  </script>
+  // Mueve los productos no disponibles al contenedor correspondiente
+  productos.forEach((producto) => {
+    const disponible = producto.getAttribute("data-disponible");
+    if (disponible === "false") {
+      productosNoDisponiblesContainer.appendChild(producto);
+    }
+  });
+});
+</script>
 
         <div class="printful-product2">
         <div id="produccto" class="product" data-disponible="false">
